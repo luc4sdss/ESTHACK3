@@ -1,0 +1,44 @@
+body{
+    display: grid;
+    grid-template-areas:    'navbar navbar navbar navbar'
+    'header header header header'
+    'section section section section'
+    'footer footer footer footer';
+    margin: 0;
+    grid-template-rows: 10vh 50vh 20vh 10vh;
+    background-color: black;
+}
+
+nav{
+    grid-area: navbar;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav div:nth-child(1){
+    margin: 30px;
+}
+
+nav div:nth-child(2){
+    display: flex;
+    text-decoration: none;
+    font-size: 18pt;
+    justify-content: space-evenly;
+}
+
+header{
+    grid-area: header;
+    background-image: url("images/panda.jpg")
+}
+
+section{
+    grid-area: section;
+    background-color: azure;
+}
+
+footer{
+    grid-area: footer;
+    background-color: burlywood;
+}
